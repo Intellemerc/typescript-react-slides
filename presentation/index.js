@@ -89,7 +89,7 @@ export default class Presentation extends React.Component {
           <Heading size={6} textColor="primary" caps>Existing project: Init</Heading>
           <List textColor="primary">
             <Appear><ListItem>Use CRA/Typescript as template</ListItem></Appear>
-            <Appear><ListItem>Yarn add --dev ts-loader, tslint, tslint-loader, tslint-react</ListItem></Appear>
+            <Appear><ListItem>Yarn add --dev ts-loader tslint tslint-loader tslint-react</ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">

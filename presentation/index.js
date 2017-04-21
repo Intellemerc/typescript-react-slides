@@ -89,7 +89,7 @@ export default class Presentation extends React.Component {
           <Heading size={6} textColor="primary" caps>Existing project: Init</Heading>
           <List textColor="primary">
             <Appear><ListItem>Use CRA/Typescript as template</ListItem></Appear>
-            <Appear><ListItem>Yarn add --dev ts-loader tslint tslint-loader tslint-react</ListItem></Appear>
+            <Appear><ListItem>Yarn add --dev typescript ts-loader tslint tslint-loader tslint-react @types/jest @types/node @types/react @types/react-dom</ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
@@ -106,7 +106,11 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={5} textColor="secondary" caps>Existing Project: Hardest part</Heading>
-          <Appear><Text textColor="tertiary" lineHeight={5} >Rename js files to ts/tsx</Text></Appear>
+          <List>
+            <Appear><ListItem textColor="tertiary" lineHeight={5} >Rename js files to ts/tsx</ListItem></Appear>
+            <Appear><ListItem textColor="tertiary" lineHeight={5} >Rename js files to ts/tsx</ListItem></Appear>
+            <Appear><ListItem textColor="tertiary" lineHeight={5} >Fix components to use generics</ListItem></Appear>
+          </List>
         </Slide>
       </Deck>
     );

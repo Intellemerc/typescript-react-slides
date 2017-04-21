@@ -100,6 +100,10 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>If using jest add .ts entry re-use transformer from CRA</ListItem></Appear>
           </List>
         </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={6} textColor="primary" caps>Existing Project: Webpack</Heading>
+            <Text textAlign="Center" lineHeight={5} textSize={52} bold caps>Demo</Text>
+        </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={5} textColor="secondary" caps>Existing Project: Hardest part</Heading>
           <Appear><Text textColor="tertiary" lineHeight={5} >Rename js files to ts/tsx</Text></Appear>

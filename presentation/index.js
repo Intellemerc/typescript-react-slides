@@ -82,23 +82,32 @@ export default class Presentation extends React.Component {
           ranges={[
               { loc: [0, 8], title: "Easy Way - Greenfield" },
               { loc: [2, 3], title: "Install CRA" },
+              { loc: [4, 5], title: "Run CRA with Scripts" },
               { loc: [5, 7], title: "Start the project" }
           ]}
         />
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Existing project: Init</Heading>
           <List textColor="primary">
-            <Appear><ListItem>Use CRA/Typescript as template</ListItem></Appear>
-            <Appear><ListItem>Yarn add --dev typescript ts-loader tslint tslint-loader tslint-react @types/jest @types/node @types/react @types/react-dom</ListItem></Appear>
+            <Appear><ListItem textSize={24}>Use CRA/Typescript as template(eject)</ListItem></Appear>
+            <Appear><ListItem textSize={24}>Yarn add --dev typescript ts-loader tslint tslint-loader tslint-react @types/jest @types/node @types/react @types/react-dom</ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>Existing Project: Webpack</Heading>
           <List>
-            <Appear><ListItem>Add entry for ts and tsx files passing to ts-loader</ListItem></Appear>
+            <Appear><ListItem>Add entry Resolve>Extensions</ListItem></Appear>
             <Appear><ListItem>Add entry for ts-lint</ListItem></Appear>
-            <Appear><ListItem>If using jest add .ts entry re-use transformer from CRA</ListItem></Appear>
+            <Appear><ListItem>Add entry to exlude ts(x) from url loader </ListItem></Appear>
+            <Appear><ListItem>Add entry for ts(x)files passing to ts-loader</ListItem></Appear>
           </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={6} textColor="primary" caps>Existing Project: Jest support</Heading>
+            <List>
+              <Appear><ListItem textColor="primary">Add support for Jest</ListItem></Appear>
+              <Appear><ListItem textColor="primary">Add TS Transform for Jest</ListItem></Appear>
+            </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
             <Heading size={6} textColor="primary" caps>Existing Project: Webpack</Heading>
@@ -108,9 +117,12 @@ export default class Presentation extends React.Component {
           <Heading size={5} textColor="secondary" caps>Existing Project: Hardest part</Heading>
           <List>
             <Appear><ListItem textColor="tertiary" lineHeight={5} >Rename js files to ts/tsx</ListItem></Appear>
-            <Appear><ListItem textColor="tertiary" lineHeight={5} >Rename js files to ts/tsx</ListItem></Appear>
             <Appear><ListItem textColor="tertiary" lineHeight={5} >Fix components to use generics</ListItem></Appear>
           </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={4} textColor="primary" caps>Using Typescript in React</Heading>
+          <Heading Size={6}>Demo</Heading>
         </Slide>
       </Deck>
     );

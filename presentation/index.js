@@ -133,6 +133,13 @@ export default class Presentation extends React.Component {
             <Heading size={6} textColor="primary" caps>Existing Project: Webpack and Using Typescript</Heading>
             <Text textAlign="Center" lineHeight={5} textSize={52} bold caps>Demo</Text>
         </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary" caps>Contact Me</Heading>
+          <List>
+            <ListItem textColor="tertiary" lineHeight={5} >Twitter: @Intellemerc</ListItem>
+            <ListItem textColor="tertiary" lineHeight={5} >ReactJs Slack: @Intellemerc</ListItem>
+          </List>
+        </Slide>
       </Deck>
     );
   }

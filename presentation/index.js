@@ -58,12 +58,11 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Why Typescript</Heading>
           <List textColor="primary">
-            <Appear><ListItem>Superset of Javascript(Commitment to EcmaScript compatibility)</ListItem></Appear>
+            <Appear><ListItem>Superset of Javascript</ListItem></Appear>
             <Appear><ListItem>Can Mix JS and TS</ListItem></Appear>
             <Appear><ListItem>Zero runtime cost <span style={{ fontSize: 14 }}>(ts disappears at runtime)</span></ListItem></Appear>
-            <Appear><ListItem>Great tooling(Intellisense, autocomplete, refactor, errors, etc)</ListItem></Appear>
+            <Appear><ListItem>Great tooling(autocomplete, refactor, and errors)</ListItem></Appear>
             <Appear><ListItem>Type inference</ListItem></Appear>
-            <Appear><ListItem>Mature ecosystem</ListItem></Appear>
             <Appear><ListItem>Kept up to date(bi-monthly releases)</ListItem></Appear>
           </List>
         </Slide>
@@ -78,15 +77,10 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Angular</ListItem></Appear>
             <Appear><ListItem>VSCode</ListItem></Appear>
             <Appear><ListItem>Slack</ListItem></Appear>
-            <Appear><ListItem>Glimmer(Ember rendering engine)</ListItem></Appear>
-            <Appear><ListItem>Apollo GraphQL</ListItem></Appear>
+            <Appear><ListItem>Apollo GraphQL Client</ListItem></Appear>
             <Appear><ListItem>RxJS</ListItem></Appear>
             <Appear><ListItem>CycleJs</ListItem></Appear>
           </List>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
-            <Heading size={6} textColor="primary" caps>How does this help me?</Heading>
-            <Text textAlign="Center" lineHeight={5} textSize={52} bold caps>Demo</Text>
         </Slide>
         <CodeSlide
           transition={[]}
@@ -99,6 +93,10 @@ export default class Presentation extends React.Component {
               { loc: [3, 5], title: "Start the project" }
           ]}
         />
+        <Slide transition={["fade"]} bgColor="tertiary">
+            <Heading size={6} textColor="primary" caps>How does this help me?</Heading>
+            <Text textAlign="Center" lineHeight={5} textSize={52} bold caps>Demo</Text>
+        </Slide>
         {/*<Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Existing project: Init</Heading>
           <List textColor="primary">

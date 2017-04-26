@@ -99,7 +99,7 @@ export default class Presentation extends React.Component {
               { loc: [3, 5], title: "Start the project" }
           ]}
         />
-        <Slide transition={["fade"]} bgColor="tertiary">
+        {/*<Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Existing project: Init</Heading>
           <List textColor="primary">
             <Appear><ListItem textSize={24}>Use CRA/Typescript as reference(eject)</ListItem></Appear>
@@ -128,9 +128,9 @@ export default class Presentation extends React.Component {
             <Appear><ListItem textColor="tertiary" lineHeight={5} >Rename js files to ts/tsx</ListItem></Appear>
             <Appear><ListItem textColor="tertiary" lineHeight={5} >Fix components to use generic declaration</ListItem></Appear>
           </List>
-        </Slide>
+        </Slide>*/}
         <Slide transition={["fade"]} bgColor="tertiary">
-            <Heading size={6} textColor="primary" caps>Existing Project: Webpack and Using Typescript</Heading>
+            <Heading size={6} textColor="primary" caps>Using Typescript</Heading>
             <Text textAlign="Center" lineHeight={5} textSize={52} bold caps>Demo</Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
